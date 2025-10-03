@@ -2,7 +2,7 @@
 
 ## 1\. Login exitoso 
 
-![Login Exitoso](https://github.com/JoaquiinAguilar/JWT-DJANGO/blob/main/images/curl-login.png?raw=true)
+![Login Exitoso](https://github.com/JoaquiinAguilar/JWT-DJANGO/blob/master/images/curl-login.png?raw=true)
 
 Se realiza la petición **POST** a la ruta `/api/token/` enviando las credenciales del usuario.
 
@@ -22,7 +22,7 @@ El servidor responde exitosamente con un **token de refresco** y un **token de a
 
 ## 2\. Acceso a ruta protegida 🔐
 
-![Acceso Ruta Protegida](https://github.com/JoaquiinAguilar/JWT-DJANGO/blob/main/images/curl-token.png?raw=true)
+![Acceso Ruta Protegida](https://github.com/JoaquiinAguilar/JWT-DJANGO/blob/master/images/curl-token.png?raw=true)
 
 Se realiza la petición **GET** a la ruta `/api/protegida/` utilizando el **token de acceso** en el encabezado `Authorization`.
 
@@ -42,7 +42,7 @@ El servidor valida el token y concede el acceso, devolviendo la información sol
 
 ## 3\. Error al intentar acceder sin token 🚫
 
-![Acceso Denegado](https://github.com/JoaquiinAguilar/JWT-DJANGO/blob/main/images/curl-notToken.png?raw=true)
+![Acceso Denegado](https://github.com/JoaquiinAguilar/JWT-DJANGO/blob/master/images/curl-notToken.png?raw=true)
 
 Se realiza la petición **GET** a la misma ruta protegida, pero esta vez **sin** proporcionar el token de autorización.
 
